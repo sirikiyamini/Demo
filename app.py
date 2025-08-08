@@ -12,7 +12,7 @@ stores=[
     }
 ]
 
-@app.get("/xyz")
+@app.get("/yamu")
 def get_stores():
     return {"stores": stores}
 
