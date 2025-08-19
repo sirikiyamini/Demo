@@ -30,8 +30,6 @@ class Item(MethodView):
     def put(self,item_data,item_id):
         try:
             item = items[item_id]
-
-            # https://blog.teclado.com/python-dictionary-merge-update-operators/
             item |= item_data
             return item
         except KeyError:
